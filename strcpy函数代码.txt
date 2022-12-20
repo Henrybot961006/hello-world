@@ -1,0 +1,10 @@
+char* StrCpy(char* src)
+{
+	int len, i;
+	for (len = 0; src[len]; len++);
+	char* s = (char*)malloc(len + 1);
+	for (i = 0; i < len; i++)
+		s[i] = src[i];
+	s[i] = '\0';
+	return s;
+}
